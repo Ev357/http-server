@@ -4,12 +4,12 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use http_server_types::{error::Error, method::Method, request::Request, result::Result};
-
-use crate::{
-    types::{configuration::Configuration, response::Response, response_status::ResponseStatus},
-    utils::read_file::read_file,
+use http_server_types::{
+    error::Error, method::Method, request::Request, response::Response,
+    response_status::ResponseStatus, result::Result,
 };
+
+use crate::{configuration::Configuration, utils::read_file::read_file};
 
 pub fn send_response(
     stream: &mut TcpStream,

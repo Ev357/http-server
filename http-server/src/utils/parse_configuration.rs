@@ -5,7 +5,7 @@ use http_server_types::{
     result::Result,
 };
 
-use crate::{types::configuration::Configuration, utils::build_configuration::build_configuration};
+use crate::{configuration::Configuration, utils::build_configuration::build_configuration};
 
 #[derive(Debug)]
 pub struct ParseConfiguration {

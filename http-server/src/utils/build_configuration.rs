@@ -6,7 +6,7 @@ use http_server_types::{
 };
 
 use crate::{
-    types::configuration::Configuration,
+    configuration::Configuration,
     utils::parse_configuration::{ParseConfiguration, ParseConfigurationType},
 };
 

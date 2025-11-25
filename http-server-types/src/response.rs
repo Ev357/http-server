@@ -1,4 +1,4 @@
-use crate::types::response_status::ResponseStatus;
+use crate::response_status::ResponseStatus;
 
 #[derive(Debug)]
 pub struct Response {

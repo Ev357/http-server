@@ -3,18 +3,18 @@ use std::net::{TcpListener, TcpStream};
 use http_server_types::result::Result;
 
 use crate::{
+    configuration::Configuration,
     parse_request::parse_request,
     send_response::send_response,
-    types::configuration::Configuration,
     utils::parse_configuration::{
         ParseConfiguration, ParseConfigurationArgument, ParseConfigurationOption,
         ParseConfigurationType, parse_configuration,
     },
 };
 
+pub mod configuration;
 pub mod parse_request;
 pub mod send_response;
-pub mod types;
 pub mod utils;
 
 fn handle_client(stream: &mut TcpStream, configuration: &Configuration) -> Result<()> {
