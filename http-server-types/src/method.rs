@@ -1,6 +1,8 @@
-use crate::types::{error::Error, method::Method};
-
-pub type Result<T> = std::result::Result<T, Error>;
+#[derive(Debug)]
+pub enum Method {
+    Get,
+    Unknown,
+}
 
 impl From<&str> for Method {
     fn from(s: &str) -> Self {

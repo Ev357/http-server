@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use crate::types::method::Method;
+use crate::method::Method;
 
 #[derive(Debug)]
 pub struct Request {
